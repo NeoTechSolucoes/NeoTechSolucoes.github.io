@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Escritório de Advocacia Silvio Seixas - Soluções jurídicas profissionais">
+  <title>Silvio Seixas - Advocacia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <img src="assets/logo.png" alt="Seixas Rego Advocacia" class="logo-image">
+          </div>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link" data-translate="nav.home">PÁGINA INICIAL</a></li>
+            <li><a href="#areas-atuacao" class="nav-link" data-translate="nav.areas">ÁREAS DE ATUAÇÃO</a></li>
+            <li><a href="#nossa-equipe" class="nav-link" data-translate="nav.professional">O PROFISSIONAL</a></li>
+            <li><a href="#contato" class="nav-link" data-translate="nav.contact">CONTATO</a></li>
+            <!-- Mobile Actions - Inside Menu -->
+            <li class="nav-mobile-actions">
+              <div class="nav-right-actions nav-right-actions-mobile">
+                <div class="nav-social-icons">
+                  <a href="https://wa.me/5511994138887" class="nav-social-icon" target="_blank"
+                    rel="noopener noreferrer" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                  <a href="https://www.instagram.com/seixasregoadvocacia" class="nav-social-icon" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+                <div class="nav-separator-vertical nav-separator-mobile"></div>
+                <div class="language-selector">
+                  <button class="lang-btn" data-lang="pt" aria-label="Português" title="Português (Brasil)">
+                    <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="flag-icon flag-br"
+                      preserveAspectRatio="xMidYMid meet" fill="#000000">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path fill="#009B3A"
+                          d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v18z">
+                        </path>
+                        <path fill="#FEDF01" d="M32.728 18L18 29.124L3.272 18L18 6.875z"></path>
+                        <circle fill="#002776" cx="17.976" cy="17.924" r="6.458"></circle>
+                        <path fill="#CBE9D4"
+                          d="M12.277 14.887a6.406 6.406 0 0 0-.672 2.023c3.995-.29 9.417 1.891 11.744 4.595c.402-.604.7-1.28.883-2.004c-2.872-2.808-7.917-4.63-11.955-4.614z">
+                        </path>
+                        <path fill="#88C9F9" d="M12 18.233h1v1h-1zm1 2h1v1h-1z"></path>
+                        <path fill="#55ACEE" d="M15 18.233h1v1h-1zm2 1h1v1h-1zm4 2h1v1h-1zm-3 1h1v1h-1zm3-6h1v1h-1z">
+                        </path>
+                        <path fill="#3B88C3" d="M19 20.233h1v1h-1z"></path>
+                      </g>
+                    </svg>
+                  </button>
+                  <button class="lang-btn" data-lang="en" aria-label="English" title="English (US)">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 130 120" enable-background="new 0 0 130 120" xml:space="preserve" fill="#000000"
+                      class="flag-icon flag-us">
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <g id="Infos">
+                          <rect id="BG" x="-200" y="-1350" fill="#D8D8D8" width="2180" height="1700"></rect>
+                        </g>
+                        <g id="Others">
+                          <g>
+                            <rect y="0" fill="#DC4437" width="130" height="13.3"></rect>
+                            <rect y="26.7" fill="#DC4437" width="130" height="13.3"></rect>
+                            <rect y="80" fill="#DC4437" width="130" height="13.3"></rect>
+                            <rect y="106.7" fill="#DC4437" width="130" height="13.3"></rect>
+                            <rect y="53.3" fill="#DC4437" width="130" height="13.3"></rect>
+                            <rect y="13.3" fill="#FFFFFF" width="130" height="13.3"></rect>
+                            <rect y="40" fill="#FFFFFF" width="130" height="13.3"></rect>
+                            <rect y="93.3" fill="#FFFFFF" width="130" height="13.3"></rect>
+                            <rect y="66.7" fill="#FFFFFF" width="130" height="13.3"></rect>
+                            <rect y="0" fill="#2A66B7" width="70" height="66.7"></rect>
+                            <polygon fill="#FFFFFF"
+                              points="13.5,4 15.8,8.9 21,9.7 17.2,13.6 18.1,19 13.5,16.4 8.9,19 9.8,13.6 6,9.7 11.2,8.9 ">
+                            </polygon>
+                            <polygon fill="#FFFFFF"
+                              points="34,4 36.3,8.9 41.5,9.7 37.8,13.6 38.6,19 34,16.4 29.4,19 30.2,13.6 26.5,9.7 31.7,8.9 ">
+                            </polygon>
+                            <polygon fill="#FFFFFF"
+                              points="54.5,4 56.8,8.9 62,9.7 58.2,13.6 59.1,19 54.5,16.4 49.9,19 50.8,13.6 47,9.7 52.2,8.9 ">
+                            </polygon>
+                            <polygon fill="#FFFFFF"
+                              points="24,24 26.3,28.9 31.5,29.7 27.8,33.6 28.6,39 24,36.4 19.4,39 20.2,33.6 16.5,29.7 21.7,28.9 ">
+                            </polygon>
+                            <polygon fill="#FFFFFF"
+                              points="44.5,24 46.8,28.9 52,29.7 48.2,33.6 49.1,39 44.5,36.4 39.9,39 40.8,33.6 37,29.7 42.2,28.9 ">
+                            </polygon>
+                            <polygon fill="#FFFFFF"
+                              points="13.5,45.2 15.8,50.1 21,50.9 17.2,54.7 18.1,60.2 13.5,57.6 8.9,60.2 9.8,54.7 6,50.9 11.2,50.1 ">
+                            </polygon>
+                            <polygon fill="#FFFFFF"
+                              points="34,45.2 36.3,50.1 41.5,50.9 37.8,54.7 38.6,60.2 34,57.6 29.4,60.2 30.2,54.7 26.5,50.9 31.7,50.1 ">
+                            </polygon>
+                            <polygon fill="#FFFFFF"
+                              points="54.5,45.2 56.8,50.1 62,50.9 58.2,54.7 59.1,60.2 54.5,57.6 49.9,60.2 50.8,54.7 47,50.9 52.2,50.1 ">
+                            </polygon>
+                          </g>
+                        </g>
+                        <g id="Europe">
+                          <g id="Row_5"> </g>
+                          <g id="Row_4"> </g>
+                          <g id="Row_3"> </g>
+                          <g id="Row_2"> </g>
+                          <g id="Row_1"> </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Desktop Actions - Outside Menu -->
+          <div class="nav-right-actions nav-right-actions-desktop">
+            <div class="nav-social-icons">
+              <a href="https://wa.me/5511994138887" class="nav-social-icon" target="_blank" rel="noopener noreferrer"
+                aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://www.instagram.com/seixasregoadvocacia" class="nav-social-icon" target="_blank"
+                rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="nav-separator-vertical"></div>
+            <div class="language-selector">
+              <button class="lang-btn" data-lang="pt" aria-label="Português" title="Português (Brasil)">
+                <svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true" role="img" class="flag-icon flag-br" preserveAspectRatio="xMidYMid meet"
+                  fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill="#009B3A" d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v18z">
+                    </path>
+                    <path fill="#FEDF01" d="M32.728 18L18 29.124L3.272 18L18 6.875z"></path>
+                    <circle fill="#002776" cx="17.976" cy="17.924" r="6.458"></circle>
+                    <path fill="#CBE9D4"
+                      d="M12.277 14.887a6.406 6.406 0 0 0-.672 2.023c3.995-.29 9.417 1.891 11.744 4.595c.402-.604.7-1.28.883-2.004c-2.872-2.808-7.917-4.63-11.955-4.614z">
+                    </path>
+                    <path fill="#88C9F9" d="M12 18.233h1v1h-1zm1 2h1v1h-1z"></path>
+                    <path fill="#55ACEE" d="M15 18.233h1v1h-1zm2 1h1v1h-1zm4 2h1v1h-1zm-3 1h1v1h-1zm3-6h1v1h-1z"></path>
+                    <path fill="#3B88C3" d="M19 20.233h1v1h-1z"></path>
+                  </g>
+                </svg>
+              </button>
+              <button class="lang-btn" data-lang="en" aria-label="English" title="English (US)">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 130 120" enable-background="new 0 0 130 120" xml:space="preserve" fill="#000000"
+                  class="flag-icon flag-us">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g id="Infos">
+                      <rect id="BG" x="-200" y="-1350" fill="#D8D8D8" width="2180" height="1700"></rect>
+                    </g>
+                    <g id="Others">
+                      <g>
+                        <rect y="0" fill="#DC4437" width="130" height="13.3"></rect>
+                        <rect y="26.7" fill="#DC4437" width="130" height="13.3"></rect>
+                        <rect y="80" fill="#DC4437" width="130" height="13.3"></rect>
+                        <rect y="106.7" fill="#DC4437" width="130" height="13.3"></rect>
+                        <rect y="53.3" fill="#DC4437" width="130" height="13.3"></rect>
+                        <rect y="13.3" fill="#FFFFFF" width="130" height="13.3"></rect>
+                        <rect y="40" fill="#FFFFFF" width="130" height="13.3"></rect>
+                        <rect y="93.3" fill="#FFFFFF" width="130" height="13.3"></rect>
+                        <rect y="66.7" fill="#FFFFFF" width="130" height="13.3"></rect>
+                        <rect y="0" fill="#2A66B7" width="70" height="66.7"></rect>
+                        <polygon fill="#FFFFFF"
+                          points="13.5,4 15.8,8.9 21,9.7 17.2,13.6 18.1,19 13.5,16.4 8.9,19 9.8,13.6 6,9.7 11.2,8.9 ">
+                        </polygon>
+                        <polygon fill="#FFFFFF"
+                          points="34,4 36.3,8.9 41.5,9.7 37.8,13.6 38.6,19 34,16.4 29.4,19 30.2,13.6 26.5,9.7 31.7,8.9 ">
+                        </polygon>
+                        <polygon fill="#FFFFFF"
+                          points="54.5,4 56.8,8.9 62,9.7 58.2,13.6 59.1,19 54.5,16.4 49.9,19 50.8,13.6 47,9.7 52.2,8.9 ">
+                        </polygon>
+                        <polygon fill="#FFFFFF"
+                          points="24,24 26.3,28.9 31.5,29.7 27.8,33.6 28.6,39 24,36.4 19.4,39 20.2,33.6 16.5,29.7 21.7,28.9 ">
+                        </polygon>
+                        <polygon fill="#FFFFFF"
+                          points="44.5,24 46.8,28.9 52,29.7 48.2,33.6 49.1,39 44.5,36.4 39.9,39 40.8,33.6 37,29.7 42.2,28.9 ">
+                        </polygon>
+                        <polygon fill="#FFFFFF"
+                          points="13.5,45.2 15.8,50.1 21,50.9 17.2,54.7 18.1,60.2 13.5,57.6 8.9,60.2 9.8,54.7 6,50.9 11.2,50.1 ">
+                        </polygon>
+                        <polygon fill="#FFFFFF"
+                          points="34,45.2 36.3,50.1 41.5,50.9 37.8,54.7 38.6,60.2 34,57.6 29.4,60.2 30.2,54.7 26.5,50.9 31.7,50.1 ">
+                        </polygon>
+                        <polygon fill="#FFFFFF"
+                          points="54.5,45.2 56.8,50.1 62,50.9 58.2,54.7 59.1,60.2 54.5,57.6 49.9,60.2 50.8,54.7 47,50.9 52.2,50.1 ">
+                        </polygon>
+                      </g>
+                    </g>
+                    <g id="Europe">
+                      <g id="Row_5"> </g>
+                      <g id="Row_4"> </g>
+                      <g id="Row_3"> </g>
+                      <g id="Row_2"> </g>
+                      <g id="Row_1"> </g>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto">
+      <source src="assets/0_Justice_Scales_3840x2160.mov" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-logo">
+          <div class="hero-logo-text">
+            <div class="hero-logo-main">SEIXAS REGO</div>
+            <div class="hero-logo-sub">ADVOCACIA ESPECIALIZADA</div>
+          </div>
+        </div>
+        <p class="hero-description" data-translate="hero.description">Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <div class="hero-buttons">
+          <a href="#quem-somos" class="btn btn-dark" data-translate="btn.learnMore">Saiba Mais</a>
+          <a href="#contato" class="btn btn-light" data-translate="btn.contact">Contato</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quem Somos Section -->
+  <section id="quem-somos" class="section section-quem-somos">
+    <div class="container">
+      <div class="quem-somos-header">
+        <h2 class="quem-somos-title">
+          <span class="title-part-dark" data-translate="section.who">Quem</span>
+          <span class="title-part-accent" data-translate="section.are">Somos</span>
+        </h2>
+        <div class="quem-somos-separator"></div>
+      </div>
+      <div class="quem-somos-content">
+        <p class="quem-somos-text" data-translate="quem-somos.p1">Há 30 anos, somos movidos pela coragem de enfrentar os
+          temas mais sensíveis do Direito, pela técnica para solucionar questões de alta complexidade e pela convicção
+          de que a advocacia é instrumento de transformação.</p>
+
+        <p class="quem-somos-text" data-translate="quem-somos.p2">Construímos nossa história com atuação sólida no
+          Direito Criminal, Empresarial, Ambiental, Eleitoral e Administrativo, conduzindo grandes operações, casos
+          envolvendo agentes públicos, crimes ambientais, crimes fiscais, lavagem de capitais e disputas de alto impacto
+          regulatório e econômico.</p>
+
+        <p class="quem-somos-text" data-translate="quem-somos.p3">Unimos estratégia e profundidade técnica para oferecer
+          consultoria empresarial em temas sensíveis, contencioso administrativo e judicial tributário, além de forte
+          presença no Direito Público, especialmente em licitações, permissões, concessões e PPPs.</p>
+
+        <p class="quem-somos-text" data-translate="quem-somos.p4">Nos tribunais, nossa atuação se destaca pela precisão
+          argumentativa e excelência em recursos, memoriais e sustentações orais, inclusive nos tribunais superiores.
+        </p>
+
+        <p class="quem-somos-text" data-translate="quem-somos.p5">Somos um escritório que valoriza pessoas. Nossa equipe
+          é formada por profissionais altamente qualificados, comprometidos com estudo contínuo, ética e rigor técnico.
+        </p>
+
+        <p class="quem-somos-text" data-translate="quem-somos.p6">Esse é o nosso DNA: visão estratégica, excelência
+          jurídica e a dedicação de quem, há três décadas, entrega soluções que protegem, transformam e inspiram
+          confiança.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossa História Section -->
+  <section id="nossa-historia" class="section section-nossa-historia">
+    <div class="container">
+      <div class="nossa-historia-wrapper">
+        <div class="nossa-historia-content">
+          <h2 class="nossa-historia-title">
+            <span class="title-part-dark" data-translate="historia.title1">O</span>
+            <span class="title-part-accent" data-translate="historia.title2">ESCRITÓRIO</span>
+          </h2>
+          <div class="nossa-historia-text">
+            <p data-translate="historia.p1">Há 30 anos, construímos uma trajetória marcada pela coragem de enfrentar os
+              temas mais sensíveis, a técnica para resolver questões de alta complexidade e o compromisso inabalável com
+              a defesa da legalidade. Inquietos e estratégicos, evoluímos constantemente para entregar uma advocacia
+              moderna, inteligente e transformadora.</p>
+
+            <p data-translate="historia.p2">Nascemos no Direito Criminal e ampliamos nossa atuação para o Direito
+              Empresarial, Ambiental, Eleitoral e Administrativo, sempre com um olhar atento às demandas de uma economia
+              dinâmica e às mudanças do Estado brasileiro. Hoje, somos referência na condução de grandes operações,
+              crimes praticados por agentes públicos e servidores, crimes ambientais, crimes fiscais, lavagem de
+              capitais e toda a gama do contencioso penal econômico.</p>
+
+            <p data-translate="historia.p3">Nossa experiência multidisciplinar também nos posiciona como parceiros
+              estratégicos na assessoria e consultoria empresarial, especialmente em temas sensíveis e de alto impacto
+              regulatório, reputacional e financeiro. Atuamos de forma destacada no contencioso administrativo e
+              judicial tributário, oferecendo respostas precisas, seguras e alinhadas ao ambiente de negócios de cada
+              cliente.</p>
+
+            <p data-translate="historia.p4">No Direito Público, nossa presença é igualmente robusta. Participamos de
+              modelagens e estruturas jurídicas para licitações, permissões, concessões de serviços públicos e PPPs,
+              atuando tanto na consultoria quanto no acompanhamento de todas as fases dos procedimentos. Nossa atuação
+              reúne técnica, visão estratégica e profundo conhecimento da dinâmica estatal.</p>
+
+            <p data-translate="historia.p5">Além disso, temos atuação destacada no Direito Eleitoral, oferecendo
+              consultoria e assessoria jurídica a partidos, agentes públicos e candidatos em todas as fases do processo
+              político-eleitoral. Atuamos em registros e impugnações de candidaturas, representações, investigações e
+              ações eleitorais, sempre com precisão técnica e visão estratégica. Também prestamos suporte integral em
+              compliance eleitoral e na orientação de condutas de agentes políticos, além de acompanhar de perto
+              campanhas e atos de gestão em período eleitoral, assegurando conformidade, segurança jurídica e a proteção
+              da legitimidade do processo democrático.</p>
+
+            <p data-translate="historia.p6">Nos tribunais, nosso trabalho é reconhecido por excelência técnica, precisão
+              argumentativa e atuação dedicada em recursos, memoriais, sustentações orais e processos nos tribunais
+              superiores. Acreditamos que cada detalhe importa — e é exatamente essa postura que nos diferencia.</p>
+
+            <p data-translate="historia.p7">Somos um escritório que valoriza pessoas. Nossa equipe é formada por
+              profissionais altamente qualificados, comprometidos com estudo permanente, com ética e com a busca
+              incansável por soluções jurídicas ágeis, eficientes e inovadoras.</p>
+
+            <p data-translate="historia.p8">Para nós, o Direito é instrumento de impacto. É com ele que protegemos,
+              transformamos e construímos relações de confiança duradouras. É assim que, há três décadas, seguimos lado
+              a lado com clientes que nos confiam seus maiores desafios — oferecendo não apenas respostas, mas caminhos.
+            </p>
+
+            <p data-translate="historia.p9">Trinta anos depois, seguimos guiados pela mesma essência: rigor técnico,
+              visão estratégica e a convicção de que a advocacia é meio de transformação.</p>
+          </div>
+        </div>
+        <div class="nossa-historia-image">
+          <div class="image-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="1">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            <span>Imagem será adicionada aqui</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Áreas de Atuação Section -->
+  <section id="areas-atuacao" class="section section-areas">
+    <div class="container">
+      <div class="areas-header">
+        <h2 class="areas-title">
+          <span class="title-part-dark" data-translate="section.areas">Áreas de</span>
+          <span class="title-part-accent" data-translate="section.practice">Atuação</span>
+        </h2>
+        <div class="areas-separator"></div>
+        <p class="areas-intro" data-translate="areas.intro">Oferecemos soluções jurídicas especializadas em diversas
+          áreas do direito, sempre com
+          foco na excelência e resultados efetivos.</p>
+      </div>
+      <div class="areas-grid-detailed">
+        <!-- Área 1: Direito Penal -->
+        <div class="area-card-detailed">
+          <div class="area-card-header">
+            <div class="area-number">1</div>
+            <div class="area-icon-detailed">
+              <i class="fas fa-gavel"></i>
+            </div>
+            <h3 class="area-title-detailed" data-translate="area1.title">Direito Penal / Direito Penal Econômico</h3>
+          </div>
+          <ul class="area-list">
+            <li data-translate="area1.item1">Crimes praticados por agentes públicos e servidores</li>
+            <li data-translate="area1.item2">Grandes operações</li>
+            <li data-translate="area1.item3">Crimes ambientais</li>
+            <li data-translate="area1.item4">Crimes fiscais</li>
+            <li data-translate="area1.item5">Lavagem de capitais</li>
+            <li data-translate="area1.item6">Contencioso penal empresarial</li>
+          </ul>
+        </div>
+
+        <!-- Área 2: Direito Empresarial -->
+        <div class="area-card-detailed">
+          <div class="area-card-header">
+            <div class="area-number">2</div>
+            <div class="area-icon-detailed">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3 class="area-title-detailed" data-translate="area2.title">Direito Empresarial</h3>
+          </div>
+          <ul class="area-list">
+            <li data-translate="area2.item1">Assessoria e consultoria empresarial em temas sensíveis</li>
+            <li data-translate="area2.item2">Apoio jurídico estratégico a empresas em decisões de alto impacto</li>
+            <li data-translate="area2.item3">Gestão de riscos regulatórios, reputacionais e financeiros</li>
+          </ul>
+        </div>
+
+        <!-- Área 3: Direito Tributário -->
+        <div class="area-card-detailed">
+          <div class="area-card-header">
+            <div class="area-number">3</div>
+            <div class="area-icon-detailed">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <h3 class="area-title-detailed" data-translate="area3.title">Direito Tributário</h3>
+          </div>
+          <ul class="area-list">
+            <li data-translate="area3.item1">Contencioso tributário administrativo</li>
+            <li data-translate="area3.item2">Contencioso tributário judicial</li>
+            <li data-translate="area3.item3">Consultoria estratégica em matéria tributária</li>
+          </ul>
+        </div>
+
+        <!-- Área 4: Direito Administrativo / Público -->
+        <div class="area-card-detailed">
+          <div class="area-card-header">
+            <div class="area-number">4</div>
+            <div class="area-icon-detailed">
+              <i class="fas fa-landmark"></i>
+            </div>
+            <h3 class="area-title-detailed" data-translate="area4.title">Direito Administrativo / Direito Público</h3>
+          </div>
+          <ul class="area-list">
+            <li data-translate="area4.item1">Licitações</li>
+            <li data-translate="area4.item2">Permissões e concessões de serviços públicos</li>
+            <li data-translate="area4.item3">Parcerias Público-Privadas (PPPs)</li>
+            <li data-translate="area4.item4">Modelagem jurídica de projetos públicos</li>
+            <li data-translate="area4.item5">Atuação em processos envolvendo Administração Pública</li>
+          </ul>
+        </div>
+
+        <!-- Área 5: Direito Ambiental -->
+        <div class="area-card-detailed">
+          <div class="area-card-header">
+            <div class="area-number">5</div>
+            <div class="area-icon-detailed">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3 class="area-title-detailed" data-translate="area5.title">Direito Ambiental</h3>
+          </div>
+          <ul class="area-list">
+            <li data-translate="area5.item1">Crimes ambientais</li>
+            <li data-translate="area5.item2">Consultoria e defesa em matéria ambiental</li>
+            <li data-translate="area5.item3">Atuação regulatória e sancionadora ambiental</li>
+          </ul>
+        </div>
+
+        <!-- Área 6: Direito Eleitoral -->
+        <div class="area-card-detailed">
+          <div class="area-card-header">
+            <div class="area-number">6</div>
+            <div class="area-icon-detailed">
+              <i class="fas fa-vote-yea"></i>
+            </div>
+            <h3 class="area-title-detailed" data-translate="area6.title">Direito Eleitoral</h3>
+          </div>
+          <ul class="area-list">
+            <li data-translate="area6.item1">Consultoria e assessoria jurídica partidária</li>
+            <li data-translate="area6.item2">Defesa de agentes públicos e candidatos</li>
+            <li data-translate="area6.item3">Atuação em registros e impugnação de candidaturas, representações,
+              investigações e ações eleitorais</li>
+            <li data-translate="area6.item4">Consultoria em compliance eleitoral e conduta de agentes políticos</li>
+            <li data-translate="area6.item5">Acompanhamento de campanhas e atos de gestão em período eleitoral</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nossa Equipe Section -->
+  <section id="nossa-equipe" class="section section-equipe">
+    <div class="container">
+      <div class="equipe-wrapper">
+        <div class="equipe-content">
+          <h2 class="equipe-title">
+            <span class="title-part-dark" data-translate="section.our">Nossa</span>
+            <span class="title-part-accent" data-translate="section.team">Equipe</span>
+          </h2>
+          <div class="equipe-separator"></div>
+          <div class="equipe-text">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.</p>
+            <h3 class="equipe-subtitle">Where does it come from?</h3>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+              Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+              Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+              Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+              undoubtable source.</p>
+            <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of
+              Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+              during the Renaissance.</p>
+          </div>
+        </div>
+        <div class="equipe-image">
+          <div class="equipe-image-frame">
+            <div class="equipe-image-placeholder">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              <span>Imagem do profissional será adicionada aqui</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato Section -->
+  <section id="contato" class="section section-contato">
+    <div class="container">
+      <div class="contato-wrapper">
+        <!-- Left Side: Contact Info -->
+        <div class="contato-info">
+          <h2 class="contato-title">
+            <span class="title-part-dark" data-translate="section.speak">Fale</span>
+            <span class="title-part-accent" data-translate="section.withUs">Conosco</span>
+          </h2>
+          <div class="contato-separator"></div>
+
+          <div class="contato-section">
+            <h3 class="contato-section-title">
+              <span class="title-part-dark" data-translate="contato.our">Nossos</span>
+              <span class="title-part-accent" data-translate="contato.contacts">Contatos</span>
+            </h3>
+            <div class="contato-item">
+              <i class="fas fa-envelope contato-icon"></i>
+              <div class="contato-details">
+                <p class="contato-label" data-translate="contato.email">E-mail:</p>
+                <p class="contato-value">seixasregoadvocacia@outlook.com</p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <i class="fas fa-mobile-alt contato-icon"></i>
+              <div class="contato-details">
+                <p class="contato-label" data-translate="contato.mobile">Celular:</p>
+                <p class="contato-value">(11) 99413-8887</p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <i class="fas fa-phone contato-icon"></i>
+              <div class="contato-details">
+                <p class="contato-label" data-translate="contato.phone">Telefone:</p>
+                <p class="contato-value">(11) 2366-7488</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contato-section">
+            <h3 class="contato-section-title">
+              <span class="title-part-dark" data-translate="contato.ourAddress">Nosso</span>
+              <span class="title-part-accent" data-translate="contato.address">endereço</span>
+            </h3>
+            <div class="contato-item">
+              <i class="fas fa-map-marker-alt contato-icon"></i>
+              <div class="contato-details">
+                <p class="contato-address">Seixas Rego Advocacia Especializada<br>
+                  Alameda Vicente Pizon, 144 - Conjunto 52<br>
+                  Vila Olímpia - São Paulo/SP - 04547-130</p>
+              </div>
+            </div>
+            <div class="contato-actions">
+              <button class="btn-address btn-address-primary"
+                onclick="window.open('https://maps.google.com/?q=Alameda+Vicente+Pizon+144+Vila+Olimpia+Sao+Paulo', '_blank')">
+                <i class="fas fa-map-marker-alt"></i>
+                <span data-translate="contato.openMaps">Abrir no Google Maps</span>
+              </button>
+              <button class="btn-address btn-address-secondary"
+                onclick="window.open('https://waze.com/ul?q=Alameda+Vicente+Pizon+144+Vila+Olimpia+Sao+Paulo', '_blank')">
+                <i class="fab fa-waze"></i>
+                <span data-translate="contato.waze">Traçar rota no Waze</span>
+              </button>
+              <button class="btn-address btn-address-secondary" onclick="copyAddress(event)">
+                <i class="fas fa-copy"></i>
+                <span data-translate="contato.copy">Copiar endereço</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vertical Separator -->
+        <div class="contato-separator-vertical"></div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contato-form">
+          <h3 class="contato-form-title">
+            <span class="title-part-dark" data-translate="contato.getIn">Entre em</span>
+            <span class="title-part-accent" data-translate="contato.contact">contato</span>
+          </h3>
+          <p class="contato-form-description" data-translate="contato.formDesc">Para qualquer solicitação, preencha os
+            campos no formulário abaixo:</p>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="nome" data-translate="form.name">Nome completo</label>
+              <input type="text" id="nome" name="nome" data-translate="form.namePlaceholder" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-translate="form.email">E-mail</label>
+              <input type="email" id="email" name="email" data-translate="form.emailPlaceholder" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone" data-translate="form.phone">Telefone (opcional)</label>
+              <input type="tel" id="telefone" name="telefone" data-translate="form.phonePlaceholder">
+            </div>
+            <div class="form-group">
+              <label for="mensagem" data-translate="form.message">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" data-translate="form.messagePlaceholder"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-paper-plane"></i>
+              <span data-translate="form.send">Enviar</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Column 1: Logo -->
+        <div class="footer-section footer-logo">
+          <div class="footer-logo-wrapper">
+            <img src="assets/logo.png" alt="Seixas Rego Advocacia" class="footer-logo-image">
+          </div>
+        </div>
+
+        <!-- Column 2: Navegação -->
+        <div class="footer-section">
+          <h4 class="footer-title" data-translate="footer.navigation">Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#home" data-translate="nav.home">PÁGINA INICIAL</a></li>
+            <li><a href="#areas-atuacao" data-translate="nav.areas">ÁREAS DE ATUAÇÃO</a></li>
+            <li><a href="#nossa-equipe" data-translate="nav.professional">O PROFISSIONAL</a></li>
+            <li><a href="#contato" data-translate="nav.contact">CONTATO</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contato -->
+        <div class="footer-section">
+          <h4 class="footer-title" data-translate="footer.contact">Contato</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-envelope footer-contact-icon"></i>
+              <span><span data-translate="contato.email">E-mail:</span> seixasregoadvocacia@outlook.com</span>
+            </li>
+            <li>
+              <i class="fas fa-mobile-alt footer-contact-icon"></i>
+              <span><span data-translate="contato.mobile">Celular:</span> (11) 99413-8887</span>
+            </li>
+            <li>
+              <i class="fas fa-phone footer-contact-icon"></i>
+              <span><span data-translate="contato.phone">Telefone:</span> (11) 2366-7488</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Redes Sociais e Info -->
+        <div class="footer-section footer-social">
+          <h4 class="footer-title" data-translate="footer.social">Rede sociais</h4>
+          <div class="footer-social-icons">
+            <a href="#" class="footer-social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" class="footer-social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="footer-company-info">
+            <p>Seixas Rego</p>
+            <p>CNPJ: 50.063.147/0001-07</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Seixas Rego - <span data-translate="footer.copyright">Todos os direitos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
