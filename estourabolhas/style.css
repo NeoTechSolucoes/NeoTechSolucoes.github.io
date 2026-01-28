@@ -21,7 +21,7 @@ body {
   /* imagem de fundo + leve véu para contraste do HUD/bolhas */
   background:
     linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.65)),
-    url('oceano.png') center center / cover no-repeat fixed;
+    url('gif_oceano.gif') center center / cover no-repeat fixed;
   background-color: #001423; /* fallback enquanto a imagem carrega */
 
   color: var(--text);
